@@ -24,4 +24,5 @@ npm start
 Then open the client page (`client/index.html`, `client/upload.html`, `fe/index.html`) with Live Server.
 
 The homework has its own setup guide: [`lab4-homework/README.md`](lab4-homework/README.md).
+
 Homework video demo: https://drive.google.com/drive/folders/1qkfUXyxvsPg4zUpYghGIZ7HbA1ot9jZS?usp=sharing
