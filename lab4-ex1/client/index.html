@@ -1,0 +1,141 @@
+<!-- index.html - Web UI client -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Product Management - Client Web UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background: #f4f6f9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #1F4E79;
+            color: white;
+        }
+
+        .btn-delete {
+            background: #d9534f;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        /* ---- added for the extended requirements ---- */
+        .btn-edit,
+        .btn-save {
+            background: #1F4E79;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .btn-cancel {
+            background: #888;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        td:last-child {
+            white-space: nowrap;
+        }
+
+        td input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 4px;
+        }
+
+        .filter-bar {
+            margin-top: 20px;
+        }
+
+        .message {
+            display: none;
+            margin-top: 15px;
+            padding: 10px 12px;
+            border-radius: 6px;
+        }
+
+        .message.error {
+            display: block;
+            background: #fdecea;
+            border: 1px solid #f5c2c0;
+            color: #b42318;
+        }
+
+        .message.success {
+            display: block;
+            background: #ecfdf3;
+            border: 1px solid #abefc6;
+            color: #067647;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Product Management (Client Web UI)</h2>
+        <form id="productForm">
+            <input type="text" id="name" placeholder="Product name" required>
+            <input type="number" id="price" placeholder="Price (VND)" required>
+            <input type="text" id="category" placeholder="Category">
+            <button type="submit">Add product</button>
+        </form>
+
+        <!-- Visible message box (errors and success) -->
+        <div id="message" class="message"></div>
+
+        <!-- Category filter -->
+        <div class="filter-bar">
+            <label for="categoryFilter">Filter by category: </label>
+            <select id="categoryFilter">
+                <option value="">All categories</option>
+            </select>
+        </div>
+
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price (VND)</th>
+                    <th>Category</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

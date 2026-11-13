@@ -1,0 +1,16 @@
+{
+  "name": "lab4-ex1",
+  "version": "1.0.0",
+  "description": "Lab 4 Exercise 1 - Product API with CORS + Fetch Web UI",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Nguyen Minh Tri",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0"
+  }
+}

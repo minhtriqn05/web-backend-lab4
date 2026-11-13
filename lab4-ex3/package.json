@@ -1,0 +1,17 @@
+{
+  "name": "lab4-ex3",
+  "version": "1.0.0",
+  "description": "Lab 4 Exercise 3 - Weather API with axios (cache, timeout, retry)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Nguyen Minh Tri",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.21.1",
+    "cors": "^2.8.6",
+    "express": "^5.3.0"
+  }
+}

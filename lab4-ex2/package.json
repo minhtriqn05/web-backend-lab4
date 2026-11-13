@@ -1,0 +1,17 @@
+{
+  "name": "lab4-ex2",
+  "version": "1.0.0",
+  "description": "Lab 4 Exercise 2 - File upload and download with Multer",
+  "main": "upload_server.js",
+  "scripts": {
+    "start": "node upload_server.js"
+  },
+  "keywords": [],
+  "author": "Nguyen Minh Tri",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "multer": "^2.5.0"
+  }
+}
